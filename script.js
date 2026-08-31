@@ -16,3 +16,4 @@ function addSubject() {
 
     document.getElementById("subject").value = "";
 }
+let subjects = []; function addSubject() { const input = document.getElementById("subjectInput"); const subjectName = input.value.trim(); if (subjectName === "") { alert("Please enter subject name"); return; } subjects.push(subjectName); input.value = ""; console.log("Subject added:", subjectName); }
